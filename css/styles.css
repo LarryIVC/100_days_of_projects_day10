@@ -93,14 +93,19 @@ article {
 .content-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.3rem;
 }
 
 .content-container > h1 {
   color: var(--white);
   font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-container > h1:hover {
+  color: var(--cyan);
 }
 
 .content-container > p {
@@ -138,32 +143,34 @@ article {
   font-weight: 600;
   margin-left: 8px;
 }
-.content-container > hr {
-  border: none;
-  height: 1px;
-  background: var(--very-dark-blue-line);
-  margin: 1rem 0;
-}
 
 footer {
   display: flex;
   align-items: center;
   gap: 1rem;
+  border-top: 1px solid var(--very-dark-blue-line);
+  padding-top: 1rem;
 }
+
 footer > img {
   width: 32px;
-  height: auto;
+  height: 32px;
   border-radius: 50%;
   border: 1px solid var(--white);
 }
 
 footer > p {
-  color: var(--white);
   font-size: 1rem;
   font-weight: 300;
+  color: var(--soft-blue);
 }
 
 footer > p > span {
-  color: var(--soft-blue);
-  margin-right: 0.5rem;
+  color: var(--white);
+  margin-left: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+footer > p > span:hover {
+  color: var(--cyan);
 }
